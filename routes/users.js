@@ -9,13 +9,13 @@ router.get('/login',(req,res)=>{
     if(req.isAuthenticated()) {
         res.redirect('/dashboard'); 
     }
-    res.render('login');
+    res.render('login', { title: 'Please Login'});
 })
 router.get('/register',(req,res)=>{
      if(req.isAuthenticated()) {
         res.redirect('/dashboard'); 
     }
-    res.render('register')
+    res.render('register', { title: 'Please Register'})
     })
 //Register handle
 router.post('/login',(req,res,next)=>{

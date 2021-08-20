@@ -5,7 +5,7 @@ const {ensureAuthenticated} = require("../config/auth.js")
 
 //login page
 router.get('/', (req,res)=>{
-    res.render('welcome');
+    res.render('welcome' , { title: 'My Site'} );
 })
 //register page
 router.get('/register', (req,res)=>{
