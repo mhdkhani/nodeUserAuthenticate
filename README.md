@@ -6,6 +6,5 @@ Installation method:
 
 1- Download or clone from this page.
 
-
-2- Execute this command
+2- Execute this command:
 nodemon app.js
